@@ -221,3 +221,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# robot data — never commit
+data/
+*.mcap
+*.mp4
+*.hdf5
+*.h5
+*.parquet
+.env
