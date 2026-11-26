@@ -7,7 +7,11 @@ authors = [
     { name = "Harshith Raju", email = "har29shith@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "duckdb>=2.0.1",
+    "polars>=2.2.0",
+    "pyarrow>=26.0.1",
+]
 
 [project.scripts]
 robolake = "robolake:main"
@@ -18,6 +22,7 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
+    "ipykernel>=7.4.0",
     "pytest>=9.2.0",
     "ruff>=0.17.6",
 ]
